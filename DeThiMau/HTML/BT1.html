@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaiThiGK 2022-2023</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../JAVASCRIPT/BT1.js"></script>
+    <link href="../CSS/BT1.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+    <div class="header">
+        <h1>BÀI THI ỨNG DỤNG WEB</h1> 
+        <h2>MSSV: 2351010176-Họ tên: Phạm Minh Quân</h2>
+    </div>
+    <div class="nav">
+        <ul class="menu" type="none">
+            <li><a href="#">Trang chủ</a> </li>
+            <li><a href="#">Mã hóa</a> </li>
+            <li><a href="#">Chủ đề sách</a>
+                <ul class="submenu" type="none">
+                    <li><a href="#">Lập trình web</a></li>
+                    <li><a href="#">Hệ điều hành</a></li>
+                    <li><a href="#">Mạng máy tính</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="left">
+            <fieldset>
+                <legend>Chọn thao tác</legend>
+                <p>Đổi màu tiêu đề: <input type=color id="textcolor" value="#ffff00"></p>
+                <p>Chữ có bóng: <input type="checkbox" id="shadow"></p>
+                <p>Chọn loại sách: 
+                    <select name="bookType">
+                        <option value="LTWeb">Lập trình web</option>
+                        <option value="HDH">Hệ điều hành</option>
+                        <option value="MMT">Mạng máy tính</option>
+                        <option value="All" selected>Tất cả</option>
+                    </select>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Mã hóa chuỗi</legend>
+                <p>Nhập chuỗi gốc: <br>
+                    <input type="text" size="50px" id="string" value="ABC-XYZ-01-89-ABYZ">
+                </p>
+                <p>
+                    Mật mã (n): <input type="number" id="n" value=1>
+                    <button type="button">Mã hóa</button>
+                </p>
+                <p>
+                    Thay ký tự (hoặc chữ số) bằng ký tự (hoặc chữ số) đứng sau nó n vị trí theo kiểu xoay vòng
+                </p>
+                <p>
+                    <input type="text" id="result" size="50px">
+                </p>
+            </fieldset>
+        </div>
+        <div class="right">
+            <p class="LTWeb">
+                <img src="../Images/1.jpg">
+                <img src="../Images/1.jpg">
+                <img src="../Images/1.jpg">
+            </p>   
+            <p class="HDH">
+                <img src="../Images/2.jpg">
+                <img src="../Images/2.jpg">
+                <img src="../Images/2.jpg">
+            </p>
+            <p class="MMT">
+                <img src="../Images/3.jpg">
+                <img src="../Images/3.jpg">
+                <img src="../Images/3.jpg">
+            </p>
+        </div>
+    </div>
+    <div class="footer">
+        Copyright 2022
+    </div>
+    </div>
+</body>
+</html>
